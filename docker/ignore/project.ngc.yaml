@@ -1,0 +1,5 @@
+from: scratch
+
+description: >-
+  Adds **.dockerignore** file to the App
+  and manages it through NGC values

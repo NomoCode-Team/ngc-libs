@@ -1,0 +1,4 @@
+from:
+  - docker/ignore
+
+description: Creates NodeJS App

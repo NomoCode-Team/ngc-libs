@@ -1,0 +1,17 @@
+nodejs:
+  version: 20
+  package.json:
+    name: "{{ ngc.app.name }}"
+    version: 1.0.0
+    description: ''
+    main: index.js
+    scripts: { }
+    author: ''
+    license: ISC
+    dependencies: { }
+    devDependencies: { }
+  command: npm run
+
+docker:
+  ignore:
+    - node_modules
