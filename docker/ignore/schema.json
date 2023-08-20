@@ -2,18 +2,30 @@
     "type": "object",
     "properties": {
       "docker": {
+        "description": "Docker namespace",
         "type": "object",
         "properties": {
           "ignore": {
             "type": "array",
             "description": "List of files or folders to add into .dockerignore file",
             "items": {
-              "type": "string"
+              "type": "string",
+              "description": "Single line/entry in .dockerignore file"
             }
           }
         },
         "required": ["ignore"]
       }
     },
-    "required": ["docker"]
+    "required": ["docker"],
+    "examples": [
+      {
+        "docker": {
+          "ignore": [
+            "node_modules",
+            ".DS_Store"
+          ]
+        }
+      }
+    ]
 }
