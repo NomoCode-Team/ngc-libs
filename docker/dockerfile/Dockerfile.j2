@@ -1,0 +1,6 @@
+{% for stage in docker.dockerfile.stages %}
+FROM {{ stage.from }}{{ stage.name | default('') | ternary(' as ' + stage.name, '') }}
+{% if stage.script %}{{ stage.script | join('\n') }}{% endif %}
+{% if stage.cmd %}CMD {{ stage.cmd }}{% endif %}
+
+{% endfor %}

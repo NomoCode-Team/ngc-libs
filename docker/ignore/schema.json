@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+      "docker": {
+        "type": "object",
+        "properties": {
+          "ignore": {
+            "type": "array",
+            "description": "List of files or folders to add into .dockerignore file",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["ignore"]
+      }
+    },
+    "required": ["docker"]
+}
