@@ -26,7 +26,7 @@ export default function Homepage() {
               <div style={{ width: '100px', height: '100px' }}> {/* Set a container size */}
                 <Image
                   className="h-full w-full"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                  src="https://tailwindui.com/img/logos/mark.svg"
                   alt=""
                   layout="fill" // Automatically fills the container
                 />
@@ -65,7 +65,7 @@ export default function Homepage() {
                 <div style={{ width: '100px', height: '100px' }}> {/* Set a container size */}
                   <Image
                     className="h-full w-full"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src="https://tailwindui.com/img/logos/mark.svg"
                     alt=""
                     layout="fill" // Automatically fills the container
                   />
@@ -144,7 +144,7 @@ export default function Homepage() {
             </div>
             <Image
               className="h-full w-full"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+              src="https://tailwindui.com/img/logos/mark.svg"
               alt=""
               width={2432}
               height={1442}
