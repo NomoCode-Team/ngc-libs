@@ -1,4 +1,4 @@
-// const TerserPlugin = require('terser-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -23,7 +23,6 @@ const nextConfig = {
         });
       });
 
-      /*
       // Use TerserPlugin to remove comments
       config.optimization.minimizer.push(
         new TerserPlugin({
@@ -34,7 +33,6 @@ const nextConfig = {
           },
         })
       );
-      */
 
       return config;
     },
