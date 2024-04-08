@@ -1,1 +1,7 @@
-ngc_website_title: "Site Title"
+ngc_website_title: 'Site Title'
+ngc_website_description: 'Site Description'
+ngc_website_authors: 
+  - Site Author
+ngc_website_keywords:
+  - keyword_1
+  - keyword_2
