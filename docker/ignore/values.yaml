@@ -1,4 +1,5 @@
 docker:
   ignore:
     - Dockerfile
+    - docker-compose.yml
     - README.md
