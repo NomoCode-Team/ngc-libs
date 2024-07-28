@@ -1,0 +1,37 @@
+---
+type: object
+properties:
+  docker:
+    type: object
+    properties:
+      dockerfile:
+        type: object
+        properties:
+          stages:
+            type: array
+            minItems: 1
+            items:
+              type: object
+              properties:
+                from:
+                  type: string
+                  description: Docker base image name
+                name:
+                  type: string
+                  description: Stage name
+                script:
+                  type: array
+                  description: Dockerfile instructions for the stage
+                  items:
+                    type: string
+                cmd:
+                  type: string
+                  description: Dockerfile CMD instruction for stage
+              required:
+              - from
+        required:
+        - stages
+    required:
+    - dockerfile
+required:
+- docker
